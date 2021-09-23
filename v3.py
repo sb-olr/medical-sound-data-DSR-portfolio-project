@@ -95,7 +95,7 @@ def create_input_label(df=df_meta2,names=names_input,name_label=name_label):
         path_name = ['./CoronaHack-Respiratory-Sound-Dataset'  + str(dir_name for dir_name in path_list)]
         sound_paths_tensor = tf.convert_to_tensor(path_name, dtype=tf.string) #convert to tensor
         sound = tf.data.Dataset.from_tensor_slices(sound_paths_tensor)
-        input_dic['x_{}'.format(index)] = sound.map(lambda sample: preprocess_other(sample)).batch(32) #generating the names of recordings(features x_0 till x_8) in batch mode
+        input_dic['x_{}'.format(index)] = sound.map(lambda sample: preprocess_other(sample))#.batch(128) #generating the names of recordings(features x_0 till x_8) in batch mode
 
 
     path_label = df[name_label]
@@ -118,13 +118,13 @@ class AutoEncoder(tf.keras.Model):
         self.latent_dim = latent_dim
 
         # Encoder
-        self.encoder_reshape = layers.Reshape((64,64,1)) #Shape as 64,64,1
+        self.encoder_reshape = layers.Reshape((64*64,)) #Shape as 64,64,1
         self.encoder_fc1 = layers.Dense(256, activation="relu")
         self.encoder_fc2 = layers.Dense(latent_dim, activation="relu")
 
         # Decoder
         self.decoder_fc1 = layers.Dense(256, activation='relu')
-        self.decoder_fc2 = layers.Dense(1, activation='sigmoid')
+        self.decoder_fc2 = layers.Dense(64*64, activation='sigmoid')
         self.decoder_reshape = layers.Reshape((64,64,1))
 
         self._build_graph()
@@ -164,11 +164,11 @@ autoencoder.compile(
 ### Chunk 8
 
 history_list = {}
-
+train_data = tf.data.Dataset.zip((x['x_0'],x['x_0']))
 history = autoencoder.fit(
-    x,
+    train_data,
     epochs = 20,
-    batch_size=32
+    batch_size=128
 
 )
 
