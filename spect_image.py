@@ -41,6 +41,7 @@ def preprocess_other(samples):
 
     return spectograms
 
+
 names = ['counting-normal','counting-fast','breathing-deep','breathing-shallow','cough-heavy','cough-shallow','vowel-a','vowel-e','vowel-o']
 input_dic = {}
 base_path = './CoronaHack-Respiratory-Sound-Dataset' 

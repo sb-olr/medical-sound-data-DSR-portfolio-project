@@ -14,9 +14,9 @@ model_name = "autoencoder"
 latent_dim = 2
 batch_size = 256
 epochs = 20
-adam_learning_rate = 0.001
+adam_learning_rate = 0.0001
 # read meta data
-data_obj = Data(file_name=file_name)
+data_obj = Data(filename=file_name)
 df_meta = data_obj.create_df()
 # train
 train_obj = Train(
@@ -27,6 +27,7 @@ train_obj = Train(
     image_target_height=image_target_height,
     image_target_width=image_target_width,
 )
+
 history = train_obj.train(
     model_name=model_name,
     latent_dim=latent_dim,

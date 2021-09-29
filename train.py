@@ -3,6 +3,8 @@ from models import AutoEncoder, VAE, encode, decode
 import tensorflow as tf
 import tensorflow_io as tfio
 from tensorflow import keras
+import numpy as np
+
 
 
 class Train:
@@ -20,10 +22,8 @@ class Train:
         audio = sample
         audio = tf.reshape(sample, [-1])
         audio = tf.cast(audio, tf.float32)  # set audio file as float
-
         # generate the mel spectrogram
         spectrogram = tfio.audio.spectrogram(audio, nfft=1024, window=1024, stride=64)
-
         spectrogram = tfio.audio.melscale(
             spectrogram,
             rate=8000,
@@ -49,7 +49,6 @@ class Train:
         for index, name in enumerate(self.names):
             path_list = self.df[name].tolist()
             path_name = []
-            print("create path name")
             for dir_name in path_list:
                 if dir_name is not None:
                     path_name.append(self.base_path + str(dir_name))
@@ -60,8 +59,9 @@ class Train:
             sound_tensor_list_clean = [
                 sound_tensor
                 for sound_tensor in sound_tensor_list
-                if sound_tensor.shape[0] == 300000
+                if ((sound_tensor.shape[0] == 300000) and (np.sum(sound_tensor.numpy())>0))
             ]
+            
             sound_slices = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean)
             input_dic["x_{}".format(index)] = sound_slices.map(
                 lambda sample: self.get_spectrogram(sample)
@@ -74,12 +74,12 @@ class Train:
 
     def train(self, model_name, latent_dim, learning_rate, batch_size=256, epochs=50):
 
-        model_path = model_name + ".hdf5"
         if model_name == "autoencoder":
-            model = AutoEncoder(latent_dim)
+            model = AutoEncoder(latent_dim,self.image_target_height,self.image_target_width)
             model.summary()
 
-            model.compile(optimizer="rmsprop", loss="binary_crossentropy")
+            #model.compile(optimizer="rmsprop", loss="binary_crossentropy")
+            model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate),loss="binary_crossentropy")
 
         elif model_name == "vae":
             encoder = encode(
@@ -90,16 +90,12 @@ class Train:
             model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate))
 
         x_input, _ = self.create_input_label()
+        
         dataset = tf.data.Dataset.zip((x_input['x_0'], x_input['x_0']))
-
-        checkpoint = tf.keras.callbacks.ModelCheckpoint(
-            model_path, monitor="loss", save_best_only=True, mode="min", verbose=0
-        )
-        callbacks = [checkpoint]
+        
         history = model.fit(
             dataset.batch(batch_size),
             epochs=epochs,
-            callbacks=callbacks,
         )
 
         return history
