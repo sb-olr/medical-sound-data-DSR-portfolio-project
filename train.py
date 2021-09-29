@@ -90,7 +90,7 @@ class Train:
             model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate))
 
         x_input, _ = self.create_input_label()
-        dataset = tf.data.Dataset.zip((x_input[0], x_input[0]))
+        dataset = tf.data.Dataset.zip((x_input['x_0'], x_input['x_0']))
 
         checkpoint = tf.keras.callbacks.ModelCheckpoint(
             model_path, monitor="loss", save_best_only=True, mode="min", verbose=0
