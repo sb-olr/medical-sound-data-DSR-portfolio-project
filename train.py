@@ -46,34 +46,48 @@ class Train:
 
     def create_input_label(self):
         input_dic = {}  # Use a dictionnary to put in the 9 records per case
+        input_dic_val = {}
         for index, name in enumerate(self.names):
             path_list = self.df[name].tolist()
             path_name = []
+            
             for dir_name in path_list:
                 if dir_name is not None:
                     path_name.append(self.base_path + str(dir_name))
+
+            # Cut tensors longer than 300k to 300k
             sound_tensor_list = [
                 tfio.audio.AudioIOTensor(sound_path).to_tensor()[:300000]
                 for sound_path in path_name
             ]
+            print(" Sound File List Len", len(path_name))
+            print(" Sound Tensor List Len", len(sound_tensor_list))
+            # Take only non zero and at least 300k length tensors
             sound_tensor_list_clean = [
-                sound_tensor
+                sound_tensor 
                 for sound_tensor in sound_tensor_list
                 if ((sound_tensor.shape[0] == 300000) and (np.sum(sound_tensor.numpy())>0))
             ]
-            
+            print(" ´Clean´ Sound Tensor List Len", len(sound_tensor_list_clean))
             sound_slices = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean)
-            input_dic["x_{}".format(index)] = sound_slices.map(
+            train_index =  int(0.8*len(sound_tensor_list_clean))
+            input_dic["x_{}".format(index)] = sound_slices[:train_index].map(
                 lambda sample: self.get_spectrogram(sample)
             )  # generating the names of recordings(features x_0 till x_8) in batch mode
-
+            input_dic_val["x_{}".format(index)] = sound_slices[train_index:].map(
+                lambda sample: self.get_spectrogram(sample)
+            )  
         path_label = self.df[self.name_label]
         y = tf.convert_to_tensor(path_label, dtype=tf.int16)
 
-        return input_dic, y
+        return input_dic,input_dic_val, y
 
-    def train(self, model_name, latent_dim, learning_rate, batch_size=256, epochs=50):
+    def train(self, model_name, learning_rate, latent_dim, batch_size=256, epochs=50):
+        
+        # Create inputs for model
+        x_input,x_input_val, _ = self.create_input_label()
 
+        # Setup the model and input data depending on it's type
         if model_name == "autoencoder":
             model = AutoEncoder(latent_dim,self.image_target_height,self.image_target_width)
             model.summary()
@@ -81,21 +95,28 @@ class Train:
             #model.compile(optimizer="rmsprop", loss="binary_crossentropy")
             model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate),loss="binary_crossentropy")
 
+            dataset = tf.data.Dataset.zip((x_input['x_0'], x_input['x_0'])).batch(batch_size)
+            val_dataset = tf.data.Dataset.zip((x_input_val['x_0'], x_input_val['x_0'])).batch(batch_size)
+
         elif model_name == "vae":
             encoder = encode(
                 latent_dim, self.image_target_height, self.image_target_width
             )
-            decoder = decode()
+
+            decoder = decode(latent_dim)
             model = VAE(encoder, decoder)
             model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate))
 
-        x_input, _ = self.create_input_label()
+            dataset = x_input['x_0'].batch(batch_size)
+            val_dataset = x_input_val['x_0'].batch(batch_size)
+
         
-        dataset = tf.data.Dataset.zip((x_input['x_0'], x_input['x_0']))
+        print("Dataset: ", dataset)
         
         history = model.fit(
-            dataset.batch(batch_size),
+            dataset,
             epochs=epochs,
+            validation_data = val_dataset
         )
 
         return history

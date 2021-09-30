@@ -8,14 +8,14 @@ file_name = (
     "./CoronaHack-Respiratory-Sound-Dataset/Corona-Hack-Respiratory-Sound-Metadata.csv"
 )
 base_path = "./CoronaHack-Respiratory-Sound-Dataset"
-names = ["cough-heavy"]
+names = ["counting-fast"]
 name_labels = "split"
 image_target_height = 28
 image_target_width = 28
-model_name = "autoencoder"
+model_name = "vae"  # "autoencoder"
 latent_dim = 2
-batch_size = 256
-epochs = 3
+batch_size = 64
+epochs = 200
 adam_learning_rate = 0.0001
 # read meta data
 data_obj = Data(filename=file_name)

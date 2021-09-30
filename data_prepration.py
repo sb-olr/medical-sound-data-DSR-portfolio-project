@@ -3,9 +3,11 @@ import pandas as pd
 class Data:
     def __init__(self,filename):
         self.file_name = filename
+        
     def read_file(self):
         df_meta = pd.read_csv(self.file_name)
         return df_meta
+
     def create_feature(self,df_meta):
         #split COVID STATUS column to get labels in column 'split'
         df_meta['split'] = df_meta['COVID_STATUS'].str.split('_').str.get(0)
@@ -17,6 +19,7 @@ class Data:
         df_meta2 = df_meta.dropna()
         df_meta2.loc[:,'split'] = df_meta2.loc[:,'split'].astype('int32')
         return df_meta2
+
     def create_df(self):
         df_meta = self.read_file()
         df_meta2 = self.create_feature(df_meta)
