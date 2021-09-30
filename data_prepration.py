@@ -13,7 +13,8 @@ class Data:
         cat_dict = {'healthy':0,'no':0,'resp':0,'recovered':0,'positive':1}
         #map cat_dict to split column 
         df_meta.loc[:,'split'] =  df_meta.loc[:,'split'].map(cat_dict)
-        df_meta2 = df_meta.dropna(subset=['split'])
+        #df_meta2 = df_meta.dropna(subset=['split'])
+        df_meta2 = df_meta.dropna()
         df_meta2.loc[:,'split'] = df_meta2.loc[:,'split'].astype('int32')
         return df_meta2
     def create_df(self):

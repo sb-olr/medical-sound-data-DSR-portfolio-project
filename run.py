@@ -1,19 +1,21 @@
 from data_prepration import Data
 from train import Train
 
+#names_input = ['counting-normal','counting-fast','breathing-deep','breathing-shallow','cough-heavy','cough-shallow','vowel-a','vowel-e','vowel-o']
+
 # Config
 file_name = (
     "./CoronaHack-Respiratory-Sound-Dataset/Corona-Hack-Respiratory-Sound-Metadata.csv"
 )
 base_path = "./CoronaHack-Respiratory-Sound-Dataset"
-names = ["counting-normal"]
+names = ["cough-heavy"]
 name_labels = "split"
 image_target_height = 28
 image_target_width = 28
 model_name = "autoencoder"
 latent_dim = 2
 batch_size = 256
-epochs = 20
+epochs = 3
 adam_learning_rate = 0.0001
 # read meta data
 data_obj = Data(filename=file_name)
