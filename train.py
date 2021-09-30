@@ -4,6 +4,7 @@ import tensorflow as tf
 import tensorflow_io as tfio
 from tensorflow import keras
 import numpy as np
+from random import shuffle
 
 
 
@@ -69,6 +70,25 @@ class Train:
                 if ((sound_tensor.shape[0] == 300000) and (np.sum(sound_tensor.numpy())>0))
             ]
             print(" ´Clean´ Sound Tensor List Len", len(sound_tensor_list_clean))
+            '''
+            # shuffle index and create train and validation
+            index_shuffle = list(range(len(sound_tensor_list_clean)))
+            shuffle(index_shuffle)
+            sound_tensor_list_schuffle = []
+            for i in index_shuffle:
+                sound_tensor_list_schuffle.append(sound_tensor_list_clean[i])
+            train_index =  int(0.8*len(sound_tensor_list_clean))
+            sound_tensor_list_clean_train = sound_tensor_list_schuffle[:train_index]
+            sound_tensor_list_clean_vali = sound_tensor_list_schuffle[train_index:]
+            sound_slices_train = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean_train)
+            sound_slices_vali = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean_vali)
+            input_dic["x_{}".format(index)] = sound_slices_train.map(
+                lambda sample: self.get_spectrogram(sample)
+            )  # generating the names of recordings(features x_0 till x_8) in batch mode
+            input_dic_val["x_{}".format(index)] = sound_slices_vali.map(
+                lambda sample: self.get_spectrogram(sample)
+            )
+            '''
             sound_slices = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean)
             train_index =  int(0.8*len(sound_tensor_list_clean))
             input_dic["x_{}".format(index)] = sound_slices[:train_index].map(
@@ -112,11 +132,22 @@ class Train:
 
         
         print("Dataset: ", dataset)
-        
+        # save model config
+        model_path = model_name +'.hdf5'
+        early_stopings = tf.keras.callbacks.EarlyStopping(
+            monitor="val_loss", min_delta=0, patience=10, verbose=1, mode="min"
+        )
+        checkpoint = tf.keras.callbacks.ModelCheckpoint(
+            model_path, monitor="val_loss", save_best_only=True, mode="min", verbose=0
+        )
+        callbacks = [early_stopings, checkpoint]
+        # fit
         history = model.fit(
             dataset,
             epochs=epochs,
-            validation_data = val_dataset
+            validation_data = val_dataset,
+            callbacks=callbacks,
+
         )
 
         return history
