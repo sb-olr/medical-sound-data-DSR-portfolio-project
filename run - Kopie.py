@@ -8,7 +8,7 @@ file_name = (
     "./CoronaHack-Respiratory-Sound-Dataset/Corona-Hack-Respiratory-Sound-Metadata.csv"
 )
 base_path = "./CoronaHack-Respiratory-Sound-Dataset"
-names = ['vowel-e']
+names = ['counting-fast']
 name_labels = "split"
 image_target_height = 28
 image_target_width = 28

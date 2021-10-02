@@ -136,7 +136,7 @@ class Train:
         
         print("Dataset: ", dataset)
         # save model config
-        checkpoint_path = model_name + 'counting-fast' + '_checkpoint'
+        checkpoint_path = model_name + 'vowel-e' + '_checkpoint'
 
         early_stopings = tf.keras.callbacks.EarlyStopping(
             monitor="val_loss", min_delta=0.1, patience=10, verbose=1, mode="min", 
