@@ -45,6 +45,7 @@ class Train:
 
         return spectrogram
 
+
     def create_input_label(self):
         input_dic = {}  # Use a dictionnary to put in the 9 records per case
         input_dic_val = {}
@@ -73,7 +74,9 @@ class Train:
             
             # shuffle index and create train and validation
             index_shuffle = list(range(len(sound_tensor_list_clean)))
+
             shuffle(index_shuffle)
+
             sound_tensor_list_schuffle = []
             for i in index_shuffle:
                 sound_tensor_list_schuffle.append(sound_tensor_list_clean[i])
@@ -126,29 +129,36 @@ class Train:
             decoder = decode(latent_dim)
             model = VAE(encoder, decoder)
             model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate))
-
+            print(x_input.keys())
             dataset = x_input['x_0'].batch(batch_size)
             val_dataset = x_input_val['x_0'].batch(batch_size)
 
         
         print("Dataset: ", dataset)
         # save model config
-        model_path = model_name +'.hdf5'
-        # early_stopings = tf.keras.callbacks.EarlyStopping(
-        #     monitor="val_loss", min_delta=0, patience=10, verbose=1, mode="min"
-        # )
+        checkpoint_path = model_name + 'counting-fast' + '_checkpoint'
+
+        early_stopings = tf.keras.callbacks.EarlyStopping(
+            monitor="val_loss", min_delta=0.1, patience=10, verbose=1, mode="min", 
+        )
         checkpoint = tf.keras.callbacks.ModelCheckpoint(
-            model_path, monitor="val_loss", save_best_only=True, mode="min", verbose=0
+            checkpoint_path, monitor="val_loss", save_best_only=True, mode="min", verbose=0, save_weights_only=True
         )
         # early_stopings, 
-        callbacks = [checkpoint]
+        callbacks = [early_stopings, checkpoint]
         # fit
         history = model.fit(
             dataset,
             epochs=epochs,
             validation_data = val_dataset,
             callbacks=callbacks,
-
         )
 
-        return history
+        # model.build((None, 28, 28, 1))
+        # model.save(model_path, save_format="tf")
+
+        return history, model
+    
+
+
+    # def test(self, model_name, learning_rate, latent_dim, batch_size=256, epochs=50):
