@@ -16,12 +16,23 @@ class Data:
         #map cat_dict to split column 
         df_meta.loc[:,'split'] =  df_meta.loc[:,'split'].map(cat_dict)
         #df_meta2 = df_meta.dropna(subset=['split'])
-        df_meta2 = df_meta.dropna()
-        df_meta2.loc[:,'split'] = df_meta2.loc[:,'split'].astype('int32')
-        return df_meta2
+        df_meta = df_meta.dropna()
+        df_meta.loc[:,'split'] = df_meta.loc[:,'split'].astype('int32')
+
+        return df_meta
 
     def create_df(self):
         df_meta = self.read_file()
-        df_meta2 = self.create_feature(df_meta)
-        return df_meta2
+        df_meta = self.create_feature(df_meta)
+
+        # Separate Positive and Negative cases
+        df_meta_positives = df_meta[df_meta['split'] == 1]
+        df_meta_negatives = df_meta[df_meta['split'] == 0]
+
+        # Create Training set - with only negative cases and Test set - with mix of positive and negative cases
+        train_set = df_meta_negatives[len(df_meta_positives):]
+        test_set = pd.concat([df_meta_negatives[:len(df_meta_positives)], df_meta_positives])
+
+
+        return train_set, test_set
     
