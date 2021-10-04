@@ -140,3 +140,17 @@ class VAE(Model):
     def test_step(self, data):
         
         return self.train_step(data)
+
+    def call(self, inputs):
+        print("Inputs", inputs)
+        z_mean, z_log_var, z = self.encoder(inputs)
+        print("z_mean " , z_mean, "z_log_var ", z_log_var, "z ", z)
+        reconstructed = self.decoder(z)
+        print("Reconstructed ", reconstructed)
+        # Add KL divergence regularization loss.
+        kl_loss = -0.5 * tf.reduce_mean(
+            z_log_var - tf.square(z_mean) - tf.exp(z_log_var) + 1
+        )
+        print("KL_Loss", kl_loss)
+        self.add_loss(kl_loss)
+        return reconstructed
