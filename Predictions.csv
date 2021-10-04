@@ -1,0 +1,585 @@
+,USER_ID,COUNTRY,AGE,COVID_STATUS,ENGLISH_PROFICIENCY,GENDER,COUNTY_RO_STATE,CITY_LOCALITY,Diabetes,Asthma,Smoker,Hypertension,Fever,Returning_User,Using_Mask,Cold,Caugh,Muscle_Pain,loss_of_smell,Sore_Throat,Fatigue,Breathing_Difficulties,Chronic_Lung_Disease,Ischemic_Heart_Disease,Pneumonia,COVID_test_status,Diarrheoa,DATES,breathing-deep,breathing-shallow,cough-heavy,cough-shallow,counting-fast,counting-normal,vowel-a,vowel-e,vowel-o,split,full_path,sound_tensors
+0,vK2bLRNzllXNeyOMudnNSL5cfpG2,India,24,healthy,Y,M,Karnataka,Bangalore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/breathing-deep.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/breathing-shallow.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/cough-heavy.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/cough-shallow.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/counting-fast.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/counting-normal.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/vowel-a.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/vowel-e.wav,/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/vK2bLRNzllXNeyOMudnNSL5cfpG2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [7]
+ [7]
+ [8]], shape=(135168, 1), dtype=int16)"
+1,bjA2KpSxneNskrLBeqi4bqoTDQl2,India,72,healthy,Y,M,Maharashtra,Thane,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/breathing-deep.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/breathing-shallow.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/cough-heavy.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/cough-shallow.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/counting-fast.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/counting-normal.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/vowel-a.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/vowel-e.wav,/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/bjA2KpSxneNskrLBeqi4bqoTDQl2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(229376, 1), dtype=int16)"
+2,FSzobvJqOXf0rI6X05cHqOiU9Mu2,India,54,healthy,Y,M,Maharashtra,Thane West,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/breathing-deep.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/breathing-shallow.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/cough-heavy.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/cough-shallow.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/counting-fast.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/counting-normal.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/vowel-a.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/vowel-e.wav,/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/FSzobvJqOXf0rI6X05cHqOiU9Mu2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(245760, 1), dtype=int16)"
+3,EqDWckxbsETyHUeBLQ8jLtxlhir2,India,31,healthy,Y,M,Karnataka,Bangalore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/breathing-deep.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/breathing-shallow.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/cough-heavy.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/cough-shallow.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/counting-fast.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/counting-normal.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/vowel-a.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/vowel-e.wav,/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/EqDWckxbsETyHUeBLQ8jLtxlhir2/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [138]
+ [ 76]
+ [ 34]], shape=(300000, 1), dtype=int16)"
+4,FGRDO4IBbAejR0WHD5YbkXTCasg2,India,26,healthy,Y,M,Haryana,gurgaon,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/breathing-deep.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/breathing-shallow.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/cough-heavy.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/cough-shallow.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/counting-fast.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/counting-normal.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/vowel-a.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/vowel-e.wav,/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/FGRDO4IBbAejR0WHD5YbkXTCasg2/cough-shallow.wav,"tf.Tensor(
+[[    0]
+ [    0]
+ [    0]
+ ...
+ [-1961]
+ [-2072]
+ [-2540]], shape=(167936, 1), dtype=int16)"
+6,pW9mCAeWYiMoM7wW7riLvNRbYDO2,India,37,healthy,Y,M,Maharashtra,Mumbai,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/breathing-deep.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/breathing-shallow.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/cough-heavy.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/cough-shallow.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/counting-fast.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/counting-normal.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/vowel-a.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/vowel-e.wav,/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/pW9mCAeWYiMoM7wW7riLvNRbYDO2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(114688, 1), dtype=int16)"
+7,Eu11s84cuBTiPXTAtVf9mj3GkqA2,Canada,23,healthy,Y,M,Ontario,Toronto,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/breathing-deep.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/breathing-shallow.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/cough-heavy.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/cough-shallow.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/counting-fast.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/counting-normal.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/vowel-a.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/vowel-e.wav,/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/Eu11s84cuBTiPXTAtVf9mj3GkqA2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [1]
+ [1]
+ [1]], shape=(282624, 1), dtype=int16)"
+8,L7S8iIPKgiO6QWLC3mGkROCMa0s1,India,40,resp_illness_not_identified,Y,M,Gujarat,Ahmedabad,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/breathing-deep.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/breathing-shallow.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/cough-heavy.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/cough-shallow.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/counting-fast.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/counting-normal.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/vowel-a.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/vowel-e.wav,/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/L7S8iIPKgiO6QWLC3mGkROCMa0s1/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [30]
+ [43]
+ [46]], shape=(300000, 1), dtype=int16)"
+9,eP8gEM0KcBU6S5JpMdycX74KP3p2,India,32,healthy,Y,M,Telangana,Hyderabad,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/breathing-deep.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/breathing-shallow.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/cough-heavy.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/cough-shallow.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/counting-fast.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/counting-normal.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/vowel-a.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/vowel-e.wav,/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/eP8gEM0KcBU6S5JpMdycX74KP3p2/cough-shallow.wav,"tf.Tensor(
+[[ -8]
+ [ -9]
+ [-13]
+ ...
+ [ 33]
+ [ 24]
+ [ 20]], shape=(300000, 1), dtype=int16)"
+11,2TkAK2YVkYS7Ux3hAPBUgYgg9DI3,India,25,healthy,Y,F,Telangana,HYDERABAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/breathing-deep.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/breathing-shallow.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/cough-heavy.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/cough-shallow.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/counting-fast.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/counting-normal.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/vowel-a.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/vowel-e.wav,/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/2TkAK2YVkYS7Ux3hAPBUgYgg9DI3/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(294912, 1), dtype=int16)"
+12,QQbzKidDxHQ0eZFEL4uG68s1lc02,India,26,healthy,Y,M,Karnataka,Bangalore,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/breathing-deep.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/breathing-shallow.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/cough-heavy.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/cough-shallow.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/counting-fast.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/counting-normal.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/vowel-a.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/vowel-e.wav,/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/QQbzKidDxHQ0eZFEL4uG68s1lc02/cough-shallow.wav,"tf.Tensor(
+[[   0]
+ [   0]
+ [   0]
+ ...
+ [-310]
+ [-556]
+ [-806]], shape=(300000, 1), dtype=int16)"
+13,9ypQNsTsSQYlx72wxTLrHzzNoAJ2,India,55,healthy,Y,F,Rajasthan,Udaipur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/breathing-deep.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/breathing-shallow.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/cough-heavy.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/cough-shallow.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/counting-fast.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/counting-normal.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/vowel-a.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/vowel-e.wav,/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/9ypQNsTsSQYlx72wxTLrHzzNoAJ2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(300000, 1), dtype=int16)"
+14,cfZUmZvsecYVKw5eSi4qIhfJVpI3,India,38,healthy,Y,M,Karnataka,Bangalore urban,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/breathing-deep.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/breathing-shallow.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/cough-heavy.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/cough-shallow.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/counting-fast.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/counting-normal.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/vowel-a.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/vowel-e.wav,/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/cfZUmZvsecYVKw5eSi4qIhfJVpI3/cough-shallow.wav,"tf.Tensor(
+[[    0]
+ [    0]
+ [    0]
+ ...
+ [-1489]
+ [-1401]
+ [-1174]], shape=(300000, 1), dtype=int16)"
+17,LqGeCxef4fN4IPanKEbWkO1fAwJ3,India,24,healthy,Y,M,Madhya Pradesh,Jabalpur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/breathing-deep.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/breathing-shallow.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/cough-heavy.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/cough-shallow.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/counting-fast.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/counting-normal.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/vowel-a.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/vowel-e.wav,/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/LqGeCxef4fN4IPanKEbWkO1fAwJ3/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-2]
+ [-2]
+ [-3]], shape=(299008, 1), dtype=int16)"
+18,XUsJp0qysAPtu3vBI0UCiHRJhZ22,India,54,healthy,Y,M,Karnataka,Bangalore  J P Ngar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/breathing-deep.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/breathing-shallow.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/cough-heavy.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/cough-shallow.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/counting-fast.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/counting-normal.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/vowel-a.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/vowel-e.wav,/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/XUsJp0qysAPtu3vBI0UCiHRJhZ22/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [ 0]
+ [-1]
+ [-2]], shape=(300000, 1), dtype=int16)"
+19,eZ9KEu3fmEgvxINqgcbkBXoEsv53,India,25,no_resp_illness_exposed,Y,M,Andhra Pradesh,Kadapa,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/breathing-deep.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/breathing-shallow.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/cough-heavy.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/cough-shallow.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/counting-fast.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/counting-normal.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/vowel-a.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/vowel-e.wav,/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/eZ9KEu3fmEgvxINqgcbkBXoEsv53/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(225280, 1), dtype=int16)"
+21,iq8oYXczSjPuJoVS7DBpkGNMC2p1,Canada,32,healthy,Y,M,Ontario,Etobicoke,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/breathing-deep.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/breathing-shallow.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/cough-heavy.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/cough-shallow.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/counting-fast.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/counting-normal.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/vowel-a.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/vowel-e.wav,/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/iq8oYXczSjPuJoVS7DBpkGNMC2p1/cough-shallow.wav,"tf.Tensor(
+[[    0]
+ [    0]
+ [    0]
+ ...
+ [-4986]
+ [-4714]
+ [-4398]], shape=(167936, 1), dtype=int16)"
+22,O4BFgxvAgwbwRGZMkMBJRFnGBbd2,India,30,healthy,Y,M,Maharashtra,Thanke,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/breathing-deep.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/breathing-shallow.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/cough-heavy.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/cough-shallow.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/counting-fast.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/counting-normal.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/vowel-a.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/vowel-e.wav,/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/O4BFgxvAgwbwRGZMkMBJRFnGBbd2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(151552, 1), dtype=int16)"
+23,nMIOAh7qRFf3pqbchclOLKbPDOm1,India,23,healthy,Y,M,Maharashtra,Mumbai,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/breathing-deep.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/breathing-shallow.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/cough-heavy.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/cough-shallow.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/counting-fast.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/counting-normal.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/vowel-a.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/vowel-e.wav,/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/nMIOAh7qRFf3pqbchclOLKbPDOm1/cough-shallow.wav,"tf.Tensor(
+[[    0]
+ [    0]
+ [    0]
+ ...
+ [-1277]
+ [ -954]
+ [ -654]], shape=(300000, 1), dtype=int16)"
+24,Pr79fov0a5TW5KPo0XACvIqMtO72,India,26,healthy,Y,F,Karnataka,Bangalore ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/breathing-deep.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/breathing-shallow.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/cough-heavy.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/cough-shallow.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/counting-fast.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/counting-normal.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/vowel-a.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/vowel-e.wav,/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/Pr79fov0a5TW5KPo0XACvIqMtO72/cough-shallow.wav,"tf.Tensor(
+[[19]
+ [22]
+ [26]
+ ...
+ [-5]
+ [-6]
+ [-6]], shape=(172032, 1), dtype=int16)"
+25,60Ig4PmU9NMqKGDMR8Um0Tc2KXB3,India,31,healthy,Y,F,Maharashtra,Virar/Palghar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/breathing-deep.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/breathing-shallow.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/cough-heavy.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/cough-shallow.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/counting-fast.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/counting-normal.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/vowel-a.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/vowel-e.wav,/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/60Ig4PmU9NMqKGDMR8Um0Tc2KXB3/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(159744, 1), dtype=int16)"
+26,CrlV0ddIqdbtxNnkIhtPS5dvoX42,India,41,healthy,Y,F,Kerala,Trivandrum,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/breathing-deep.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/breathing-shallow.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/cough-heavy.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/cough-shallow.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/counting-fast.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/counting-normal.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/vowel-a.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/vowel-e.wav,/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/CrlV0ddIqdbtxNnkIhtPS5dvoX42/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(286720, 1), dtype=int16)"
+27,KL32QXSSnLZlRRT2B6rQQQKgpx12,Argentina,30,healthy,Y,M,Buenos Aires,Buenos aires,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/breathing-deep.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/breathing-shallow.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/cough-heavy.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/cough-shallow.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/counting-fast.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/counting-normal.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/vowel-a.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/vowel-e.wav,/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/KL32QXSSnLZlRRT2B6rQQQKgpx12/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [8]
+ [9]
+ [9]], shape=(237568, 1), dtype=int16)"
+28,tOlOwYDEHCRx1QegeMOPaydVcgv1,India,34,healthy,Y,M,Karnataka,Bangalore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/breathing-deep.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/breathing-shallow.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/cough-heavy.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/cough-shallow.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/counting-fast.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/counting-normal.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/vowel-a.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/vowel-e.wav,/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/tOlOwYDEHCRx1QegeMOPaydVcgv1/cough-shallow.wav,"tf.Tensor(
+[[3]
+ [3]
+ [4]
+ ...
+ [8]
+ [8]
+ [8]], shape=(147456, 1), dtype=int16)"
+32,l3umDXECeOUTZH8pFN19c2WM4m43,India,54,healthy,Y,M,Rajasthan,Udaipur,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/breathing-deep.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/breathing-shallow.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/cough-heavy.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/cough-shallow.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/counting-fast.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/counting-normal.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/vowel-a.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/vowel-e.wav,/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/l3umDXECeOUTZH8pFN19c2WM4m43/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(300000, 1), dtype=int16)"
+33,XVjp63ocWZRqJRdxCtklUfmdklm2,India,27,healthy,Y,M,Karnataka,Hoodi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/breathing-deep.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/breathing-shallow.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/cough-heavy.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/cough-shallow.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/counting-fast.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/counting-normal.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/vowel-a.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/vowel-e.wav,/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/XVjp63ocWZRqJRdxCtklUfmdklm2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [8]
+ [9]
+ [8]], shape=(300000, 1), dtype=int16)"
+34,JmN2KXZoEThB2e8KFMbM7L4fOwy1,India,57,healthy,Y,M,Chandigarh,Chandigarh,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/breathing-deep.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/breathing-shallow.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/cough-heavy.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/cough-shallow.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/counting-fast.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/counting-normal.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/vowel-a.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/vowel-e.wav,/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/JmN2KXZoEThB2e8KFMbM7L4fOwy1/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(258048, 1), dtype=int16)"
+35,SY4Ekt5W4VZdeIm5r3iLmjxz9pA2,India,30,healthy,Y,M,Kerala,Kollam,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/breathing-deep.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/breathing-shallow.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/cough-heavy.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/cough-shallow.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/counting-fast.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/counting-normal.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/vowel-a.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/vowel-e.wav,/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/SY4Ekt5W4VZdeIm5r3iLmjxz9pA2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(184320, 1), dtype=int16)"
+36,1ctsxp37dWNbCbizTioZzpAWqJx2,India,29,healthy,Y,M,Delhi,Janakpuri,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/breathing-deep.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/breathing-shallow.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/cough-heavy.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/cough-shallow.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/counting-fast.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/counting-normal.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/vowel-a.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/vowel-e.wav,/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/1ctsxp37dWNbCbizTioZzpAWqJx2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(300000, 1), dtype=int16)"
+39,AI4aa1tjlXQw4iOH4RuTvgMtK3G3,India,45,healthy,Y,M,Karnataka,Bangalore ,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/breathing-deep.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/breathing-shallow.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/cough-heavy.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/cough-shallow.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/counting-fast.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/counting-normal.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/vowel-a.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/vowel-e.wav,/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/AI4aa1tjlXQw4iOH4RuTvgMtK3G3/cough-shallow.wav,"tf.Tensor(
+[[   0]
+ [   0]
+ [   0]
+ ...
+ [5689]
+ [7871]
+ [9911]], shape=(300000, 1), dtype=int16)"
+41,NWqfdBx5mrglkG4TJ5Gt9mVnYOo2,United States,49,no_resp_illness_exposed,Y,M,Georgia,Forsyth ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/breathing-deep.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/breathing-shallow.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/cough-heavy.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/cough-shallow.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/counting-fast.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/counting-normal.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/vowel-a.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/vowel-e.wav,/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/NWqfdBx5mrglkG4TJ5Gt9mVnYOo2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(270336, 1), dtype=int16)"
+43,mFQ65xqfxpXiS6vwK1HKwq7j8o62,India,25,resp_illness_not_identified,Y,M,Telangana,Hyderabad,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200413,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/breathing-deep.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/breathing-shallow.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/cough-heavy.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/cough-shallow.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/counting-fast.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/counting-normal.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/vowel-a.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/vowel-e.wav,/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/vowel-o.wav,0,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200413/mFQ65xqfxpXiS6vwK1HKwq7j8o62/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(163840, 1), dtype=int16)"
+81,WNCUJW2QH9fEcsSUztikS1Zvoyn1,India,27,positive_asymp,Y,M,Kerala,Palakkad,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/breathing-deep.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/breathing-shallow.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/cough-heavy.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/cough-shallow.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/counting-fast.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/counting-normal.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/vowel-a.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/vowel-e.wav,/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/WNCUJW2QH9fEcsSUztikS1Zvoyn1/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-4]
+ [-5]
+ [-6]], shape=(229376, 1), dtype=int16)"
+83,TaoyZAahOzRoDQRxb0DtDZh8Opa2,India,24,positive_asymp,Y,F,Karnataka,Mangalore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/breathing-deep.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/breathing-shallow.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/cough-heavy.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/cough-shallow.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/counting-fast.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/counting-normal.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/vowel-a.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/vowel-e.wav,/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/TaoyZAahOzRoDQRxb0DtDZh8Opa2/cough-shallow.wav,"tf.Tensor(
+[[    0]
+ [    0]
+ [    0]
+ ...
+ [-2098]
+ [-1658]
+ [ -947]], shape=(143360, 1), dtype=int16)"
+89,G5kUP2QOpVSyjK6Q9rzblmTU9vW2,India,38,positive_mild,Y,M,Karnataka,LEAP,0,0,0,0,1,0,0,0,1,1,1,1,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/breathing-deep.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/breathing-shallow.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/cough-heavy.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/cough-shallow.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/counting-fast.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/counting-normal.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/vowel-a.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/vowel-e.wav,/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/G5kUP2QOpVSyjK6Q9rzblmTU9vW2/cough-shallow.wav,"tf.Tensor(
+[[-14]
+ [-13]
+ [-14]
+ ...
+ [  5]
+ [  6]
+ [  8]], shape=(299008, 1), dtype=int16)"
+91,bH6WQVvClVRDer6iOFvaGiz0luf1,India,25,positive_mild,Y,M,Karnataka,Mangalore ,0,0,0,0,1,0,1,1,1,1,0,1,1,0,0,0,0,0.0,0,20200820,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/breathing-deep.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/breathing-shallow.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/cough-heavy.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/cough-shallow.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/counting-fast.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/counting-normal.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/vowel-a.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/vowel-e.wav,/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/bH6WQVvClVRDer6iOFvaGiz0luf1/cough-shallow.wav,"tf.Tensor(
+[[   23]
+ [   24]
+ [   24]
+ ...
+ [-4866]
+ [-5013]
+ [-5128]], shape=(300000, 1), dtype=int16)"
+92,40NRJEGpU9Vg2IFXcuqCQLiKLVz1,India,23,positive_asymp,Y,F,Karnataka,Mangalore,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/breathing-deep.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/breathing-shallow.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/cough-heavy.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/cough-shallow.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/counting-fast.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/counting-normal.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/vowel-a.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/vowel-e.wav,/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/40NRJEGpU9Vg2IFXcuqCQLiKLVz1/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(253952, 1), dtype=int16)"
+93,wXChdMlWemXwRdX642WnX6JbYfA2,India,48,positive_mild,N,F,Karnataka,Bangalore.  Iisc,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/breathing-deep.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/breathing-shallow.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/cough-heavy.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/cough-shallow.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/counting-fast.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/counting-normal.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/vowel-a.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/vowel-e.wav,/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/wXChdMlWemXwRdX642WnX6JbYfA2/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [136]
+ [134]
+ [132]], shape=(300000, 1), dtype=int16)"
+101,Y635Ri3QFMcOKC0ckXgW2r0xJ422,India,24,positive_asymp,Y,F,Maharashtra,Andheri,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0.0,0,20200820,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/breathing-deep.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/breathing-shallow.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/cough-heavy.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/cough-shallow.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/counting-fast.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/counting-normal.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/vowel-a.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/vowel-e.wav,/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/Y635Ri3QFMcOKC0ckXgW2r0xJ422/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [-48]
+ [-49]
+ [-51]], shape=(131072, 1), dtype=int16)"
+103,YHHZYBxPHsUWYITjtMRAixs3DX42,India,27,positive_mild,Y,M,Karnataka,Mangalore ,0,0,0,0,1,0,0,1,1,0,1,1,1,0,0,0,0,0.0,0,20200820,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/breathing-deep.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/breathing-shallow.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/cough-heavy.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/cough-shallow.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/counting-fast.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/counting-normal.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/vowel-a.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/vowel-e.wav,/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/YHHZYBxPHsUWYITjtMRAixs3DX42/cough-shallow.wav,"tf.Tensor(
+[[40]
+ [30]
+ [23]
+ ...
+ [ 2]
+ [ 3]
+ [ 2]], shape=(135168, 1), dtype=int16)"
+104,ZzKpUtFGzsVEK7E1wsVGRftKdx93,India,25,positive_mild,Y,M,Karnataka,Dakshina kannada,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,0,0.0,0,20200820,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/breathing-deep.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/breathing-shallow.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/cough-heavy.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/cough-shallow.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/counting-fast.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/counting-normal.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/vowel-a.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/vowel-e.wav,/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/ZzKpUtFGzsVEK7E1wsVGRftKdx93/cough-shallow.wav,"tf.Tensor(
+[[ 8]
+ [11]
+ [15]
+ ...
+ [ 5]
+ [ 5]
+ [ 5]], shape=(300000, 1), dtype=int16)"
+113,HwUhcAKwJIeckUi86cbzb3sTr5m2,India,26,positive_mild,Y,M,Kerala,LEAP_TEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/breathing-deep.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/breathing-shallow.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/cough-heavy.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/cough-shallow.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/counting-fast.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/counting-normal.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/vowel-a.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/vowel-e.wav,/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/HwUhcAKwJIeckUi86cbzb3sTr5m2/cough-shallow.wav,"tf.Tensor(
+[[   0]
+ [   0]
+ [   0]
+ ...
+ [1906]
+ [1787]
+ [1684]], shape=(77824, 1), dtype=int16)"
+116,9Wkd6QJdpBNEosMpzYhFwZjBJX92,India,25,positive_mild,Y,M,Karnataka,Dakshina kannada,0,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,0,0.0,0,20200820,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/breathing-deep.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/breathing-shallow.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/cough-heavy.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/cough-shallow.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/counting-fast.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/counting-normal.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/vowel-a.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/vowel-e.wav,/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/9Wkd6QJdpBNEosMpzYhFwZjBJX92/cough-shallow.wav,"tf.Tensor(
+[[ 15]
+ [  7]
+ [  0]
+ ...
+ [-20]
+ [-16]
+ [-12]], shape=(278528, 1), dtype=int16)"
+118,05acPS4aRGfvuOfku11Za8zve8i2,India,22,positive_mild,Y,M,Karnataka,LEAP-TEST,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/breathing-deep.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/breathing-shallow.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/cough-heavy.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/cough-shallow.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/counting-fast.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/counting-normal.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/vowel-a.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/vowel-e.wav,/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/05acPS4aRGfvuOfku11Za8zve8i2/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [28]
+ [28]
+ [27]], shape=(241664, 1), dtype=int16)"
+122,YRiIODBG3RXPbDttwztMhsXg1rv2,India,20,positive_mild,Y,F,Karnataka,Yeshwanthpur Iisc ,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0.0,0,20200820,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/breathing-deep.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/breathing-shallow.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/cough-heavy.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/cough-shallow.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/counting-fast.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/counting-normal.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/vowel-a.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/vowel-e.wav,/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200820/YRiIODBG3RXPbDttwztMhsXg1rv2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [6]
+ [6]
+ [5]], shape=(237568, 1), dtype=int16)"
+491,hte8VptUoGVFEqvHpbh5brgfcNP2,India,33,positive_mild,N,F,Tamil Nadu,NAMAKKAL,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0.0,0,20200504,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/breathing-deep.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/breathing-shallow.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/cough-heavy.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/cough-shallow.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/counting-fast.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/counting-normal.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/vowel-a.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/vowel-e.wav,/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200504/hte8VptUoGVFEqvHpbh5brgfcNP2/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [-52]
+ [-62]
+ [-73]], shape=(212992, 1), dtype=int16)"
+565,QjBZv868nydJzk0ZzwgKDHSG6Q82,France,50,positive_moderate,Y,F,Aisne,gfg,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0.0,0,20200707,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/breathing-deep.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/breathing-shallow.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/cough-heavy.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/cough-shallow.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/counting-fast.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/counting-normal.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/vowel-a.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/vowel-e.wav,/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200707/QjBZv868nydJzk0ZzwgKDHSG6Q82/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [1]], shape=(300000, 1), dtype=int16)"
+566,x8PvE190nSZUtv8raWxfg76ek6p2,France,20,positive_mild,Y,M,Aisne,All,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0.0,0,20200707,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/breathing-deep.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/breathing-shallow.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/cough-heavy.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/cough-shallow.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/counting-fast.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/counting-normal.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/vowel-a.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/vowel-e.wav,/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200707/x8PvE190nSZUtv8raWxfg76ek6p2/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [-10]
+ [ -7]
+ [ -4]], shape=(81920, 1), dtype=int16)"
+606,gpcoorcyfuXQZxcUFTxthUKOua03,India,23,positive_mild,Y,M,Rajasthan,Jaipur,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0.0,0,20200901,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/breathing-deep.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/breathing-shallow.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/cough-heavy.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/cough-shallow.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/counting-fast.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/counting-normal.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/vowel-a.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/vowel-e.wav,/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200901/gpcoorcyfuXQZxcUFTxthUKOua03/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [1]
+ [1]
+ [0]], shape=(249856, 1), dtype=int16)"
+610,6BT19A6gAlNjbtbe3EdgKQc4kkH3,India,28,positive_asymp,N,M,Karnataka,Mangaluru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200901,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/breathing-deep.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/breathing-shallow.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/cough-heavy.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/cough-shallow.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/counting-fast.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/counting-normal.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/vowel-a.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/vowel-e.wav,/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200901/6BT19A6gAlNjbtbe3EdgKQc4kkH3/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-1]
+ [ 0]
+ [ 0]], shape=(139264, 1), dtype=int16)"
+612,85iNcV2z6MNT3FrygbEC4fuGrIu1,India,32,positive_mild,Y,M,Maharashtra,Mumbai,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0.0,0,20200901,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/breathing-deep.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/breathing-shallow.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/cough-heavy.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/cough-shallow.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/counting-fast.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/counting-normal.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/vowel-a.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/vowel-e.wav,/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200901/85iNcV2z6MNT3FrygbEC4fuGrIu1/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(300000, 1), dtype=int16)"
+653,UnJVcWCaLzSZJS8B0YJmDwF9d143,India,62,positive_mild,Y,M,Maharashtra,Mumbai,1,0,0,0,1,0,0,0,1,0,1,1,0,1,0,1,1,1.0,0,20210406,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/breathing-deep.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/breathing-shallow.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/cough-heavy.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/cough-shallow.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/counting-fast.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/counting-normal.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/vowel-a.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/vowel-e.wav,/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20210406/UnJVcWCaLzSZJS8B0YJmDwF9d143/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [54]
+ [52]
+ [51]], shape=(249856, 1), dtype=int16)"
+655,57DMikLLUefbXYKeCPuxp5Wdtfr1,India,27,positive_mild,Y,M,West Bengal,kolkata,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,1.0,0,20210406,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/breathing-deep.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/breathing-shallow.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/cough-heavy.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/cough-shallow.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/counting-fast.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/counting-normal.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/vowel-a.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/vowel-e.wav,/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20210406/57DMikLLUefbXYKeCPuxp5Wdtfr1/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(200704, 1), dtype=int16)"
+687,Fh3hBZZRh2UXXicTNGMei8ikbSu2,India,25,positive_asymp,N,M,Maharashtra,Dombivali/Thablne,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1.0,0,20210406,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/breathing-deep.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/breathing-shallow.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/cough-heavy.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/cough-shallow.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/counting-fast.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/counting-normal.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/vowel-a.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/vowel-e.wav,/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20210406/Fh3hBZZRh2UXXicTNGMei8ikbSu2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [6]
+ [6]
+ [6]], shape=(300000, 1), dtype=int16)"
+690,IimA0GnOm7ZR4nEr8k0kG4eaR7A3,India,28,positive_mild,Y,M,Karnataka,Bangalore,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1.0,0,20210406,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/breathing-deep.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/breathing-shallow.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/cough-heavy.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/cough-shallow.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/counting-fast.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/counting-normal.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/vowel-a.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/vowel-e.wav,/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20210406/IimA0GnOm7ZR4nEr8k0kG4eaR7A3/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(300000, 1), dtype=int16)"
+694,4sjgUTKdPXcgwHbPcqEtB6WA7XB3,India,49,positive_mild,Y,F,Maharashtra,Mumbai ,1,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,1.0,0,20210406,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/breathing-deep.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/breathing-shallow.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/cough-heavy.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/cough-shallow.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/counting-fast.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/counting-normal.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/vowel-a.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/vowel-e.wav,/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20210406/4sjgUTKdPXcgwHbPcqEtB6WA7XB3/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [46]
+ [60]
+ [68]], shape=(300000, 1), dtype=int16)"
+695,W42AKc6SZlNz1NOBAJrCpa3Io0E2,India,49,positive_moderate,Y,F,Karnataka,Bangalore ,0,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0,1.0,0,20210406,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/breathing-deep.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/breathing-shallow.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/cough-heavy.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/cough-shallow.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/counting-fast.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/counting-normal.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/vowel-a.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/vowel-e.wav,/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20210406/W42AKc6SZlNz1NOBAJrCpa3Io0E2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(143360, 1), dtype=int16)"
+699,6ZovArshO1MTe2tpxFWrHmORa2R2,India,36,positive_asymp,Y,F,Maharashtra,Mumbai,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.0,0,20210406,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/breathing-deep.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/breathing-shallow.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/cough-heavy.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/cough-shallow.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/counting-fast.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/counting-normal.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/vowel-a.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/vowel-e.wav,/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20210406/6ZovArshO1MTe2tpxFWrHmORa2R2/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [73]
+ [62]
+ [53]], shape=(217088, 1), dtype=int16)"
+708,00xKcQMmcAhX8CODgBBLOe7Dm0T2,India,24,positive_mild,Y,F,West Bengal,Kolkata,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1.0,0,20210406,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/breathing-deep.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/breathing-shallow.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/cough-heavy.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/cough-shallow.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/counting-fast.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/counting-normal.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/vowel-a.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/vowel-e.wav,/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20210406/00xKcQMmcAhX8CODgBBLOe7Dm0T2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [6]
+ [7]
+ [7]], shape=(135168, 1), dtype=int16)"
+711,BfkSf0P6WcOlQW1jfLuLKEPusF82,India,34,positive_mild,Y,M,Maharashtra,Chowpatty ,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1.0,0,20210406,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/breathing-deep.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/breathing-shallow.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/cough-heavy.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/cough-shallow.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/counting-fast.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/counting-normal.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/vowel-a.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/vowel-e.wav,/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20210406/BfkSf0P6WcOlQW1jfLuLKEPusF82/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [ -9]
+ [-12]
+ [-13]], shape=(249856, 1), dtype=int16)"
+712,kAnUnZf9b6d4bkjJCawv0nCGJUI2,India,43,positive_moderate,Y,M,Maharashtra,Mumbai,0,0,0,0,1,0,1,0,1,1,0,0,0,1,0,0,0,1.0,0,20210406,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/breathing-deep.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/breathing-shallow.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/cough-heavy.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/cough-shallow.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/counting-fast.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/counting-normal.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/vowel-a.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/vowel-e.wav,/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20210406/kAnUnZf9b6d4bkjJCawv0nCGJUI2/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-6]
+ [-4]
+ [ 0]], shape=(300000, 1), dtype=int16)"
+761,y0TkG5sfyhadW3VSct50RTl3HN02,India,24,positive_mild,Y,M,Karnataka,Dakshin Kannada,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0.0,0,20200824,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/breathing-deep.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/breathing-shallow.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/cough-heavy.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/cough-shallow.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/counting-fast.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/counting-normal.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/vowel-a.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/vowel-e.wav,/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/y0TkG5sfyhadW3VSct50RTl3HN02/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [7]
+ [8]
+ [8]], shape=(159744, 1), dtype=int16)"
+762,xYCukI9rgMeslwjIYWheFtyZ6zk1,India,52,positive_mild,N,F,Karnataka,Mangalore ,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0.0,0,20200824,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/breathing-deep.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/breathing-shallow.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/cough-heavy.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/cough-shallow.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/counting-fast.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/counting-normal.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/vowel-a.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/vowel-e.wav,/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/xYCukI9rgMeslwjIYWheFtyZ6zk1/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-1]
+ [ 0]
+ [ 0]], shape=(126976, 1), dtype=int16)"
+764,Tvdak0zflIVWdvWsNj7l9Ur0k3m1,India,34,positive_mild,Y,M,Karnataka,Bangalore ,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0.0,0,20200824,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/breathing-deep.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/breathing-shallow.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/cough-heavy.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/cough-shallow.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/counting-fast.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/counting-normal.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/vowel-a.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/vowel-e.wav,/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/Tvdak0zflIVWdvWsNj7l9Ur0k3m1/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(300000, 1), dtype=int16)"
+765,31euepHD0deCxTd2nJ1wzXCk5EF3,India,40,positive_mild,N,M,Karnataka,Mangaluru,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200824,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/breathing-deep.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/breathing-shallow.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/cough-heavy.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/cough-shallow.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/counting-fast.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/counting-normal.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/vowel-a.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/vowel-e.wav,/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/31euepHD0deCxTd2nJ1wzXCk5EF3/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-1]
+ [-2]
+ [-2]], shape=(163840, 1), dtype=int16)"
+768,KcO2p01LdYga7563y95BkKII9Dh1,India,23,positive_mild,N,M,Karnataka,Mangalore ,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0.0,0,20200824,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/breathing-deep.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/breathing-shallow.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/cough-heavy.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/cough-shallow.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/counting-fast.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/counting-normal.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/vowel-a.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/vowel-e.wav,/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/KcO2p01LdYga7563y95BkKII9Dh1/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [1]
+ [1]
+ [2]], shape=(118784, 1), dtype=int16)"
+771,RUZ93kkyD0hJ1v7awXutr6RgF943,India,47,positive_mild,Y,M,Karnataka,Dakshinakannada,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0.0,0,20200824,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/breathing-deep.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/breathing-shallow.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/cough-heavy.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/cough-shallow.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/counting-fast.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/counting-normal.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/vowel-a.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/vowel-e.wav,/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/RUZ93kkyD0hJ1v7awXutr6RgF943/cough-shallow.wav,"tf.Tensor(
+[[     0]
+ [     0]
+ [     0]
+ ...
+ [-23009]
+ [-24842]
+ [-26306]], shape=(300000, 1), dtype=int16)"
+776,ptuwF1pj4ibIoVuZmt4nKb5naiZ2,India,25,positive_mild,Y,M,Karnataka,Mangalore,0,0,0,0,1,0,0,1,1,1,0,1,1,0,0,0,0,0.0,0,20200824,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/breathing-deep.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/breathing-shallow.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/cough-heavy.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/cough-shallow.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/counting-fast.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/counting-normal.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/vowel-a.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/vowel-e.wav,/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/ptuwF1pj4ibIoVuZmt4nKb5naiZ2/cough-shallow.wav,"tf.Tensor(
+[[ -1]
+ [ -1]
+ [  0]
+ ...
+ [-10]
+ [-16]
+ [-16]], shape=(300000, 1), dtype=int16)"
+778,Cd7fkliPM2ZUM1skytvoU2vD8jK2,India,34,positive_asymp,N,M,Karnataka,Mangaluru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200824,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/breathing-deep.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/breathing-shallow.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/cough-heavy.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/cough-shallow.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/counting-fast.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/counting-normal.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/vowel-a.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/vowel-e.wav,/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200824/Cd7fkliPM2ZUM1skytvoU2vD8jK2/cough-shallow.wav,"tf.Tensor(
+[[0]
+ [0]
+ [0]
+ ...
+ [0]
+ [0]
+ [0]], shape=(151552, 1), dtype=int16)"
+912,hNAGUEhL2Nh7V89at3yFEjQYo6c2,India,15,positive_mild,Y,M,Uttar Pradesh,Gorakhpur,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,20200417,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/breathing-deep.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/breathing-shallow.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/cough-heavy.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/cough-shallow.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/counting-fast.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/counting-normal.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/vowel-a.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/vowel-e.wav,/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200417/hNAGUEhL2Nh7V89at3yFEjQYo6c2/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [10]
+ [ 9]
+ [ 9]], shape=(208896, 1), dtype=int16)"
+1021,ZaeW7vuikQgf7984JVqXYOtUQMs2,India,37,positive_mild,Y,M,Kerala,Thiruvananthapuram,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0.0,0,20200814,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/breathing-deep.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/breathing-shallow.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/cough-heavy.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/cough-shallow.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/counting-fast.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/counting-normal.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/vowel-a.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/vowel-e.wav,/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20200814/ZaeW7vuikQgf7984JVqXYOtUQMs2/cough-shallow.wav,"tf.Tensor(
+[[ 13]
+ [-12]
+ [-18]
+ ...
+ [ -9]
+ [-13]
+ [-17]], shape=(184320, 1), dtype=int16)"
+1367,OnYf35hpRnNpCxV6vTU9n2ETMiD2,India,57,positive_moderate,Y,M,Karnataka,Bangalore ,1,0,0,1,1,0,1,0,0,0,1,0,0,1,0,0,0,0.0,0,20200720,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/breathing-deep.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/breathing-shallow.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/cough-heavy.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/cough-shallow.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/counting-fast.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/counting-normal.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/vowel-a.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/vowel-e.wav,/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/train/20200720/OnYf35hpRnNpCxV6vTU9n2ETMiD2/cough-shallow.wav,"tf.Tensor(
+[[ 0]
+ [ 0]
+ [ 0]
+ ...
+ [-5]
+ [-4]
+ [-4]], shape=(300000, 1), dtype=int16)"
+1394,yL9QW3T2VueXfL3yvsmXsM2hL4v1,United States,20,positive_mild,Y,M,Arizona,Phoenix,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,1.0,0,20210206,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/breathing-deep.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/breathing-shallow.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/cough-heavy.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/cough-shallow.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/counting-fast.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/counting-normal.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/vowel-a.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/vowel-e.wav,/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/vowel-o.wav,1,data/CoronaHack-Respiratory-Sound-Dataset/data/test/20210206/yL9QW3T2VueXfL3yvsmXsM2hL4v1/cough-shallow.wav,"tf.Tensor(
+[[  0]
+ [  0]
+ [  0]
+ ...
+ [-10]
+ [  6]
+ [-11]], shape=(57344, 1), dtype=int16)"

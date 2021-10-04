@@ -17,10 +17,10 @@ from statistics import mean
 from data_prepration import Data
 from models import decode, encode, VAE
 
-# names_input = ['counting-normal','counting-fast','breathing-deep','breathing-shallow','cough-heavy','cough-shallow','vowel-a','vowel-e','vowel-o']
+# names_input = ['counting-normal','counting-fast','breathing-deep', 'breathing-shallow','cough-heavy','cough-shallow','vowel-a','vowel-e','vowel-o']
 
-name = ['cough-shallow']
-weights_name = 'vaecough-shallow-48000_checkpoint'
+
+names = ['breathing-deep', 'breathing-shallow','cough-heavy','cough-shallow']
 
 latent_dim = 2
 image_target_height = 28 
@@ -60,7 +60,10 @@ train_df, test_df = data_obj.create_df()
 
 train_df = train_df.iloc[:100]
 
-def get_paths(df):
+
+
+
+def get_paths(df, name):
     paths_vector = df[name]
     paths_list = df[name].values.tolist()
 
@@ -73,23 +76,11 @@ def get_paths(df):
             path_name.append(base_path + str(dir_name[0]))
 
     # DF approach
-    test_df['full_path'] = base_path + paths_vector
-    print("full_path LENGTH", len(test_df['full_path']))
+    
 
     return path_name
 
-train_paths = get_paths(train_df)
-test_paths = get_paths(test_df)
 
-# print(test_df[name].values)
-# print("Sound File List Len", len(path_name))
-# print("Sound File List ", path_name)
-
-# Cut tensors longer than 300k to 300k
-
-# print([sound_path for sound_path in path_name])
-
-test_df['sound_tensors'] = test_df['full_path'].apply(lambda sound_path: tfio.audio.AudioIOTensor(sound_path).to_tensor()[:300000])
 
 # print("sound_tensors LENGTH", len(test_df['sound_tensors']))
 
@@ -113,55 +104,20 @@ def get_sound_tensors(sound_paths):
 
     return sound_tensor_list
 
-train_sound_tensors = get_sound_tensors(train_paths)
-test_sound_tensors = get_sound_tensors(test_paths)
-# print("Tensor list", sound_tensor_list[0])
-
-# sound_slices_train = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean_train)
-
-test_df = test_df.loc[test_df['sound_tensors'].apply(lambda sound_tensors: np.sum(sound_tensors)) != 0]
-print('spectrograms LENGTH > 0', len(test_df))
-
-
-y_test = test_df['split'].tolist()
-
-# test_df['spectrograms'] = test_df['sound_tensors'].apply(lambda sound_tensor: get_spectrogram(sound_tensor))
-# test_df['spectrograms'] = test_df['spectrograms'].apply(lambda spectrogram: tf.expand_dims(spectrogram, axis=0))
-
-# # print('spectrograms', test_df['spectrograms'][1])
-# print('spectrograms LENGTH', len(test_df['spectrograms']))
-
 def get_samples_from_tensor(sound_tensors):
     test_samples = [get_spectrogram(sound_tensor) for sound_tensor in sound_tensors]
     test_samples = [tf.expand_dims(test_sample, axis=0) for test_sample in test_samples]
 
     return test_samples
 
-train_samples = get_samples_from_tensor(train_sound_tensors)
-test_samples = get_samples_from_tensor(test_sound_tensors)
-# print("Test Sample   ", test_samples)
-
-
-encoder = encode(
-    latent_dim, image_target_height, image_target_width
-)
-decoder = decode(latent_dim)
-
-model = VAE(encoder, decoder)
-
-model.load_weights(weights_name)
-
-# x_train = test_df['spectrograms'].to_numpy()
-
-# print("PREDICTION ", x_output)
-
 def find_threshold(model, train_samples):
   reconstructions = [model.predict(x_input) for x_input in train_samples]
   # provides losses of individual instances
   reconstruction_errors = tf.keras.losses.msle(train_samples, reconstructions)
   # threshold for anomaly scores
-  threshold = np.mean(reconstruction_errors.numpy()) \
-      + np.std(reconstruction_errors.numpy())
+  threshold = np.mean(reconstruction_errors.numpy()) 
+  # + np.std(reconstruction_errors.numpy())
+
   return threshold
 
 def get_predictions(model, test_samples, threshold):
@@ -176,19 +132,103 @@ def get_predictions(model, test_samples, threshold):
     print("ERRORS.shape ", errors.shape)
 
     anomaly_mask = pd.Series(errors) > threshold
-    preds = anomaly_mask.map(lambda x: 0.0 if x == True else 1.0)
+
+    print("anomaly_mask. ", anomaly_mask)
+    preds = anomaly_mask.map(lambda x: 1.0 if x == True else 0.0)
     return preds
+
+
+encoder = encode(
+    latent_dim, image_target_height, image_target_width
+)
+decoder = decode(latent_dim)
+
+model = VAE(encoder, decoder)
+
+
+for name in names:
+
+    name = [name]
+    weights_name = 'vae' + name[0] + '-48000_checkpoint'
+
+    test_df['full_path'] = base_path + test_df[name]
+    print("full_path LENGTH", len(test_df['full_path']))
+
+    test_df['sound_tensors'] = test_df['full_path'].apply(lambda sound_path: tfio.audio.AudioIOTensor(sound_path).to_tensor()[:300000])
+    test_df = test_df.loc[test_df['sound_tensors'].apply(lambda sound_tensors: np.sum(sound_tensors)) != 0]
+    print('spectrograms LENGTH > 0', len(test_df))
+    y_test = test_df['split'].tolist()
+
+    print("GET PATHS ", name)
+    test_paths = get_paths(test_df, name)
+    train_paths = get_paths(train_df, name)
+    
+
+    print("GET SOUND TENSORS ", name)
+    train_sound_tensors = get_sound_tensors(train_paths)
+    test_sound_tensors = get_sound_tensors(test_paths)
+
+    print("GET SAMPLES ", name)
+    train_samples = get_samples_from_tensor(train_sound_tensors)
+    test_samples = get_samples_from_tensor(test_sound_tensors)
+
+    model.load_weights(weights_name)
+
+    threshold = find_threshold(model, train_samples)
+    # threshold = 0.01313
+    print(f"Threshold: {threshold}")
+    # Threshold: 0.01001314025746261
+
+    predictions = get_predictions(model, test_samples, threshold)
+    accuracy_score(predictions, y_test)
+    print(f"Accuracy: {accuracy_score(predictions, y_test)}")
+
+    print("PREDS", predictions, "ACTUAL:", y_test)
+    print("PREDS SUM", sum(predictions), "ACTUAL:", sum(y_test))
+    print("PREDS LEN", len(predictions), "ACTUAL:", len(y_test))
+
+    new_df = pd.DataFrame()
+    new_df['prediction ' + name[0]] = predictions
+    new_df['y_test' + name[0]] = y_test
+    new_df.to_csv("Predictions" + name[0] + " .csv")
+
+
+test_df.to_csv("Predictions.csv")
+
+# print(test_df[name].values)
+# print("Sound File List Len", len(path_name))
+# print("Sound File List ", path_name)
+
+# Cut tensors longer than 300k to 300k
+
+# print([sound_path for sound_path in path_name])
+
+
+# print("Tensor list", sound_tensor_list[0])
+
+# sound_slices_train = tf.data.Dataset.from_tensor_slices(sound_tensor_list_clean_train)
+
+
+# test_df['spectrograms'] = test_df['sound_tensors'].apply(lambda sound_tensor: get_spectrogram(sound_tensor))
+# test_df['spectrograms'] = test_df['spectrograms'].apply(lambda spectrogram: tf.expand_dims(spectrogram, axis=0))
+
+# # print('spectrograms', test_df['spectrograms'][1])
+# print('spectrograms LENGTH', len(test_df['spectrograms']))
+
+
+
+
+# print("Test Sample   ", test_samples)
+
+
+
+# x_train = test_df['spectrograms'].to_numpy()
+
+# print("PREDICTION ", x_output)
+
 
 # print("test_df['spectrograms'] ", train_samples )
 # print("x_train TYPE ", type(train_samples) )
 
-threshold = find_threshold(model, train_samples)
-# threshold = 0.01313
-print(f"Threshold: {threshold}")
-# Threshold: 0.01001314025746261
-
-predictions = get_predictions(model, test_samples, threshold)
-accuracy_score(predictions, y_test)
-print(f"Accuracy: {accuracy_score(predictions, y_test)}")
 
 

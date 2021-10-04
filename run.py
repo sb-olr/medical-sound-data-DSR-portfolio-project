@@ -3,11 +3,13 @@ from train import Train
 
 #names_input = ['counting-normal','counting-fast','breathing-deep','breathing-shallow','cough-heavy','cough-shallow','vowel-a','vowel-e','vowel-o']
 
+
+
 # Config
 file_name = (
-    "./CoronaHack-Respiratory-Sound-Dataset/Corona-Hack-Respiratory-Sound-Metadata.csv"
+    "data/Corona-Hack-Respiratory-Sound-Metadata.csv"
 )
-base_path = "./CoronaHack-Respiratory-Sound-Dataset"
+base_path = "data/CoronaHack-Respiratory-Sound-Dataset"
 names = ['vowel-e']
 name_labels = "split"
 image_target_height = 28

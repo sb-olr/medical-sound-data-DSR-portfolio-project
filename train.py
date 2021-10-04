@@ -6,6 +6,8 @@ from tensorflow import keras
 import numpy as np
 from random import shuffle
 
+# Import TensorBoard
+from tensorflow.keras.callbacks import TensorBoard
 
 
 class Train:
@@ -27,7 +29,7 @@ class Train:
         spectrogram = tfio.audio.spectrogram(audio, nfft=1024, window=1024, stride=64)
         spectrogram = tfio.audio.melscale(
             spectrogram,
-            rate=8000,
+            rate=48000,
             mels=64,
             fmin=0,
             fmax=2000,  # mels = bins, fmin,fmax = frequences
@@ -144,8 +146,17 @@ class Train:
         checkpoint = tf.keras.callbacks.ModelCheckpoint(
             checkpoint_path, monitor="val_loss", save_best_only=True, mode="min", verbose=0, save_weights_only=True
         )
+
+        
+        # Define Tensorboard as a Keras callback
+        tensorboard = TensorBoard(
+        log_dir='.\logs',
+        histogram_freq=1,
+        write_images=True
+        )
+
         # early_stopings, 
-        callbacks = [early_stopings, checkpoint]
+        callbacks = [early_stopings, checkpoint, tensorboard]
         # fit
         history = model.fit(
             dataset,
